@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lirc_node": "0.0.4"
+    "lirc_node": "0.0.4",
+    "lodash": "^4.11.1",
+    "onoff": "^1.0.4"
   }
 }
