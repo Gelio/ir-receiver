@@ -33,3 +33,13 @@ LedController.prototype.setState = function (pin, state) {
 
     found.gpio.writeSync(state);
 };
+
+LedController.prototype.setAll = function (state) {
+    if(state !== true && state !== false)
+        throw 'state is not a boolean';
+
+    this.leds.forEach(function(led) {
+        led.state = state;
+        led.gpio.writeSync(state);
+    });
+};
