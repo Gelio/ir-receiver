@@ -2,7 +2,7 @@ var lirc_node = require('lirc_node'),
     LedController = require('./led-controller');
 
 var Leds = new LedController(),
-    availablePins = [1, 2, 3, 4],
+    availablePins = [1, 2, 3, 4],       // TODO: fill this in after connecting pins to Raspberry
     currentPin = 0;
 
 // Turn on first led
